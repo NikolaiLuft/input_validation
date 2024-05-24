@@ -17,7 +17,7 @@ class FormScreen extends StatelessWidget {
                 border: OutlineInputBorder(),
                 label: Text("Email"),
               ),
-              autovalidateMode: AutovalidateMode.onUserInteraction,
+              autovalidateMode: AutovalidateMode.always,
               validator: validateEmail,
             ),
             const SizedBox(height: 8),
@@ -26,7 +26,7 @@ class FormScreen extends StatelessWidget {
                 border: OutlineInputBorder(),
                 label: Text("Passwort"),
               ),
-              autovalidateMode: AutovalidateMode.onUserInteraction,
+              autovalidateMode: AutovalidateMode.always,
               validator: validatePw,
             ),
             const SizedBox(height: 32),
@@ -63,4 +63,4 @@ class FormScreen extends StatelessWidget {
     }
     return null;
   }
-}
+} 
